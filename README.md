@@ -16,3 +16,11 @@ db.customer.find(
   {"cust_name": 1,"cust_code": 1}
 )
 ```
+### Query 2
+```SQL
+SELECT * FROM CUSTOMER WHERE GRADE >= 2;
+```
+
+```JSON
+
+```
