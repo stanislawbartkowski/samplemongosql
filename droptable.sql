@@ -1,0 +1,22 @@
+DROP TABLE IF EXISTS agents;
+
+DROP TABLE IF EXISTS company;
+
+DROP TABLE IF EXISTS customer; 
+
+DROP TABLE IF EXISTS daysorder; 
+
+
+DROP TABLE IF EXISTS despatch ; 
+
+DROP TABLE IF EXISTS foods; 
+
+DROP TABLE IF EXISTS listofitem;
+
+
+DROP TABLE IF EXISTS orders; 
+
+DROP TABLE IF EXISTS student;
+
+DROP TABLE IF EXISTS studentreport ;
+

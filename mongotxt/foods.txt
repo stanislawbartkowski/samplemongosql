@@ -1,0 +1,8 @@
+item_name;item_unit;company_id;item_id
+Chex Mix;Pcs;16;1
+Cheez-It;Pcs;15;6
+BN Biscuit;Pcs;15;2
+Mighty Munch;Pcs;17;3
+Pot Rice;Pcs;15;4
+Jaffa Cakes;Pcs;18;5
+Salt n Shake;Pcs;;7

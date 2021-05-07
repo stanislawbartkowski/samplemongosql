@@ -1,0 +1,6 @@
+company_city;company_id;company_name
+Boston;18;Order All
+London;15;Jack Hill Ltd
+Delhi;16;Akas Foods
+London;17;Foodies.
+New York;19;sip-n-Bite.
