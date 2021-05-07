@@ -1,5 +1,7 @@
 # samplemongosql
 
+https://www.w3resource.com/sql/sample-database-of-sql-in-mysql-format.txt
+
 # SQL to MongoDB
 
 ## Simple queries
