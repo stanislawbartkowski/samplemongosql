@@ -23,7 +23,7 @@ SELECT * FROM CUSTOMER WHERE GRADE >= 2;
 
 ```JSON
 db.customer.find(
-  {"grade": {$gte: 2}}
+  {"grade": {"$gte": 2}}
 )
 
 ```
