@@ -3,6 +3,7 @@
 # SQL to MongoDB
 
 ## Simple queries
+### Query 1
 ```SQL
 SELECT cust_name,cust_city FROM customer;
 ```
