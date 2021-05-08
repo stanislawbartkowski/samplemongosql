@@ -7,7 +7,7 @@ https://www.w3resource.com/sql/sample-database-of-sql-in-mysql-format.txt
 # SQL to MongoDB
 
 ## Simple queries
-### Query 1
+### Select only customer cust_name and cust_city
 ```SQL
 SELECT cust_name,cust_city FROM customer;
 ```
@@ -18,7 +18,7 @@ db.customer.find(
   {"cust_name": 1,"cust_code": 1}
 )
 ```
-### Query 2
+###  Write a query to display all customers with a grade above or equal 2
 ```SQL
 SELECT * FROM CUSTOMER WHERE GRADE >= 2;
 ```
