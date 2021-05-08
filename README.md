@@ -29,3 +29,9 @@ db.customer.find(
 )
 
 ```
+###  Write a SQL statement to display all customers, who are either belongs to the city New York or had a grade above 2
+```SQL
+SELECT * FROM customer WHERE cust_city = 'New York' OR grade>2;
+```
+
+
