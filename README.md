@@ -47,6 +47,7 @@ SELECT * FROM  orders WHERE NOT ((ord_date ='2012-09-10' AND agent_code>5005) OR
 
 ```JSON
 db.orders.find(
-  {"$nor": [{ "$and": [ { "ord_date": { "$eq": "2012-09-10" } }, { "agent_code": { "$gt": 5005 } } ]},{ "ord_amount": { "$gt": 1000 }}]}
+  {"$nor": [{ "$and": [ { "ord_date": { "$eq": "2012-09-10" } }, { "agent_code": { "$gt": 5005 } } ]},
+            { "ord_amount": { "$gt": 1000 }}]}
 )
 ```
