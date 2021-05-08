@@ -39,4 +39,8 @@ db.customer.find(
   {"$or": [{ "grade": { "$gt": 2 }},{ "cust_city": { "$eq": "New York" }}]}
 )
 ```
+### Write a SQL statement to display either those orders which are not issued on date 2012-09-10 and issued by the salesman whose ID is 5005 and below or those orders which purchase amount is 1000.00 and below.
+```SQL
+SELECT * FROM  orders WHERE NOT ((ord_date ='2012-09-10' AND agent_code>5005) OR ord_amount>1000.00);
+```
 
