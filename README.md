@@ -34,4 +34,9 @@ db.customer.find(
 SELECT * FROM customer WHERE cust_city = 'New York' OR grade>2;
 ```
 
+```JSON
+db.customer.find(
+  {"$or": [{ "grade": { "$gt": 2 }},{ "cust_city": { "$eq": "New York" }}]}
+)
+```
 
