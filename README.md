@@ -58,5 +58,5 @@ SELECT SUM (ORD_AMOUNT) FROM orders;
 ```
 
 ```
-db.orders.aggregate([{$group: {   _id: ObjectId(),  total : { $sum: "$ord_amount"}   } }])
+db.orders.aggregate([{$group: {_id: ObjectId(),total: {$sum: "$ord_amount"}}}])
 ```
