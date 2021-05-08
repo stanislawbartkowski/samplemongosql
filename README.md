@@ -51,3 +51,12 @@ db.orders.find(
             { "ord_amount": { "$gt": 1000 }}]}
 )
 ```
+## Aggregate
+### Find the total purchase amount for all orders
+```SQL
+SELECT SUM (ORD_AMOUNT) FROM orders;
+```
+
+```
+db.orders.aggregate([{$group: {   _id: ObjectId(),  total : { $sum: "$ord_amount"}   } }])
+```
