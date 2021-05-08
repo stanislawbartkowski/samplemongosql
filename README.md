@@ -43,4 +43,10 @@ db.customer.find(
 ```SQL
 SELECT * FROM  orders WHERE NOT ((ord_date ='2012-09-10' AND agent_code>5005) OR ord_amount>1000.00);
 ```
+(MongoDB query does not have top level *not* operator. So expression NOT ((expr1) OR (expr2)) is replaced with { $nor: \[expr1, expr2\] }
 
+```JSON
+db.orders.find(
+  {"$nor": [{ "$and": [ { "ord_date": { "$eq": "2012-09-10" } }, { "agent_code": { "$gt": 5005 } } ]},{ "ord_amount": { "$gt": 1000 }}]}
+)
+```
