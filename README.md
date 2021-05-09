@@ -51,6 +51,15 @@ db.orders.find(
             { "ord_amount": { "$gt": 1000 }}]}
 )
 ```
+### List the agents currently listing for all of their customers
+```SQL
+SELECT DISTINCT AGENT_CODE FROM orders;
+```
+
+```
+db.orders.distinct('agent_code')
+
+```
 ## Aggregate
 ### Find the total purchase amount for all orders
 ```SQL
