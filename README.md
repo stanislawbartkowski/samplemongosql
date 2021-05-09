@@ -60,6 +60,15 @@ SELECT DISTINCT AGENT_CODE FROM orders;
 db.orders.distinct('agent_code')
 
 ```
+### Find the number of agents currently listing for all of their customers
+```SQL
+SELECT COUNT(DISTINCT AGENT_CODE) FROM orders;
+```
+
+```
+ db.orders.distinct('agent_code').length
+
+```
 ## Aggregate
 ### Find the total purchase amount for all orders
 ```SQL
