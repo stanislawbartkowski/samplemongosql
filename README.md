@@ -60,3 +60,11 @@ SELECT SUM (ORD_AMOUNT) FROM orders;
 ```
 db.orders.aggregate([{$group: {_id: ObjectId(),total: {$sum: "$ord_amount"}}}])
 ```
+### Write a SQL statement to find the average purchase amount of all orders.
+```SQL
+SELECT AVG (ORD_AMOUNT) FROM orders;
+```
+
+```
+db.orders.aggregate([{$group: {_id: ObjectId(),avg: {$avg: "$ord_amount"}}}])
+```
