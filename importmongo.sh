@@ -2,6 +2,8 @@ source ./env.rc
 
 source ./commonproc.sh
 
+touchlogfile
+
 importmongo() {
     local -r table=$1
     shift

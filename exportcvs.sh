@@ -2,6 +2,8 @@ source ./env.rc
 
 source ./commonproc.sh
 
+touchlogfile
+
 exporttable() {
     required_var SCHEMA
     local -r TMP=`crtemp`
