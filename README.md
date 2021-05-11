@@ -8,9 +8,9 @@ https://www.w3resource.com/sql/sample-database-of-sql-in-mysql-format.txt
 
 Logon as *userAdmin* and create *querydb* database and user *admin*.<br>
 
->mongo mongodb://userAdmin:dfuer56pass34sm@adown-inf --authenticationDatabase 'admin'
->use qerydb
->db.createUser( { user: 'admin', pwd: 'secret', roles: [ { role: 'root', db: 'admin' } ] } );
+>mongo mongodb://userAdmin:dfuer56pass34sm@adown-inf --authenticationDatabase 'admin'<br>
+>use querydb<br>
+>db.createUser( { user: 'admin', pwd: 'secret', roles: [ { role: 'root', db: 'admin' } ] } );<br>
 
 
 
