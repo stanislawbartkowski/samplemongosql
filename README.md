@@ -4,6 +4,16 @@ https://www.w3resource.com/sql/sql-table.php
 
 https://www.w3resource.com/sql/sample-database-of-sql-in-mysql-format.txt
 
+# Load MongoDB data
+
+Logon as *userAdmin* and create *querydb* database and user *admin*.<br>
+
+>mongo mongodb://userAdmin:dfuer56pass34sm@adown-inf --authenticationDatabase 'admin'
+>use qerydb
+>db.createUser( { user: 'admin', pwd: 'secret', roles: [ { role: 'root', db: 'admin' } ] } );
+
+
+
 # SQL to MongoDB
 
 ## Simple queries
