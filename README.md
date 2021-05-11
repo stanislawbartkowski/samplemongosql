@@ -6,13 +6,29 @@ https://www.w3resource.com/sql/sample-database-of-sql-in-mysql-format.txt
 
 # Load MongoDB data
 
+## Create MongoDB database and credentials
 Logon as *userAdmin* and create *querydb* database and user *admin*.<br>
 
 >mongo mongodb://userAdmin:dfuer56pass34sm@adown-inf --authenticationDatabase 'admin'<br>
 >use querydb<br>
 >db.createUser( { user: 'admin', pwd: 'secret', roles: [ { role: 'root', db: 'admin' } ] } );<br>
 
+## Configure import
 
+> cp template/env.rc<br>
+> vi env.rc
+
+| Variable | Description | Sample value
+| ---- | ---- | ---- |
+| DELIM | Delimiter used in input text files | ;
+| MONGODIR | Subdirectory for MongoDB input text files | mongotxt
+| URI | URI string to connect to MongoDB instance | "mongodb://admin:secret@boreal-inf/querydb"
+| DATABASE | MongoDB database | querydb
+| LOGFILE | File to keep debug log lines | /tmp/log/e.log
+
+## Run import
+
+>  ./importmongo.sh
 
 # SQL to MongoDB
 
